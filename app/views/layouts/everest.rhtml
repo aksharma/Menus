@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+      <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+      <title>Everest Solutions</title>
+      <%= stylesheet_link_tag 'everest' %>
+      <%= javascript_include_tag 'prototype' %>
+</head>
+<body id=c<%= params[:controller] %>>
+  <div id=wrapper>
+          <div id=header>
+                <ul id=menulink>
+                     <% for menu in @all_menus %>
+                      <li class = <%= menu.title.downcase %>><%= link_to menu.title, :controller => menu.title.downcase %></li>
+                     <% end %>
+                </ul><!-- menulink -->
+                <ul class=optionlink id=<%= params[:action] %>>
+                     <% for option in @all_options %>
+                      <li class = <%= option.optionfile %>><%= link_to option.name, :action => option.optionfile %></li>
+                     <% end %>
+                </ul><!-- optionlink -->
+          </div><!-- header -->
+          <div id=main>
+              <div id=contentbox>
+                   <div id=content>
+                   
+                          <%= yield  %>
+                          
+                    </div> <!-- content -->
+              </div> <!-- contentbox -->
+              <div id=sideimg>
+                      <img src="../images/<%= params[:action] %>.jpg">
+              </div> <!-- sideimg -->
+              <div id=clearone>&nbsp;</div>
+          </div><!-- main -->
+              <div id=footers>
+                  <div id=contactinfo>
+                            <p>Phone: (954)456-8187</p>
+                  </div> <!-- contactinfo -->
+                  <div id=footerbar>
+                    <p>www.everestsolutions.com</p>
+                  </div> <!-- footerbar -->
+              </div><!-- footers -->
+  </div><!-- wrapper -->
+</body>
+</html>
