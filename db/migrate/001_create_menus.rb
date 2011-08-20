@@ -3,8 +3,8 @@ class CreateMenus < ActiveRecord::Migration
     create_table :menus do |t|
        t.column "position", :integer
        t.column "title", :string
-       t.column "menufile", :string
-       t.column "menuimg", :string
+#      t.column "menufile", :string
+#      t.column "menuimg", :string
     end
   end
 
