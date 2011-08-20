@@ -1,0 +1,236 @@
+html, body {
+    height: 100%; /* for footer at bottom */
+}
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background-image:url(../images/barsbg.jpg); /* #80CEFF or 128/206/255*/
+	background-repeat: repeat-y; /*border-left #CCCCCC or 204/204/204 */
+	margin:0px;
+	padding:0px;
+    width: 780px;
+    color:#101010;
+	background-color:gray;
+}
+#wrapper {
+	position: relative;    /* for footer at bottom */
+	min-height: 100%;  /* for footer at bottom */
+	margin: 0;
+	padding: 0;
+}
+#header{
+	margin: 0;
+	padding: 0;
+	width: 780px;
+	height: 148px;
+	background-image:url(../images/header.jpg);
+ }
+#main{
+    margin: 0;
+	padding: 0;
+	width: 780px;
+}
+#contentbox {
+	float: left;
+    width: 590px;
+	margin: 0;
+    padding: 0;
+	background-color: white;
+	color: black;
+}
+#content {
+    padding: 0 30px 30px 30px;
+	margin: 0;
+}
+#sideimg {
+	float: right;
+	padding: 0;
+	margin: 0;
+    width:188px;
+/*	height: 350px; */
+}
+#clearone {
+	clear: both;
+	height: 1px;
+}
+#footers {
+	position: absolute;  /* for footer at bottom */
+	bottom: 0;             /* for footer at bottom */
+	clear: both;
+	width: 780px;
+}
+#contactinfo{
+	float: right;
+	border-top:2px solid black;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+    width:188px;
+	height: 3em;
+}
+#footerbar {
+	clear: both;
+	background-image:url(../images/footer.jpg);
+	background-repeat:repeat-x;
+	width: 780px;
+    height:18px;
+	font-size:10px;
+	padding: 0;
+    color: gray;	
+	text-align:center; 
+	vertical-align:middle;
+}
+a {
+	text-decoration:none;
+	font-weight:bold;
+}
+a:link, a:visited {
+	color:#CA0000;
+}
+a:hover, a:active{
+	color:#E20553 !important;
+}
+#menulink {
+  margin: 0;
+  padding: 0;
+  margin-top: 101px;
+  width: 580px;
+  float: left;
+  list-style: none;
+}
+#menulink li {
+	float: left;
+	background-image:url(../images/tgray.jpg);
+	background-repeat:no-repeat;
+	height:27px;
+	width:99px;
+	color: black;
+	padding: 0;
+}
+#menulink a {
+  font-size:11px;
+  font-weight:bold;
+  text-decoration:none;
+  text-align:center;
+  vertical-align:middle;
+  padding: 0;
+  line-height: 2.1em;
+  color: black;
+  display: block;
+}
+#menulink a:visited {
+  color: green;
+}
+#menulink a:hover {
+  color: green;
+}
+#menulink a:active{
+	background-image:url(../images/tblue.jpg);
+	background-repeat:no-repeat;
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	vertical-align:middle;
+	height:27px;
+	width:99px;
+    padding: 0;
+}
+#chome #menulink .home a,
+#cabout #menulink .about a,
+#cservices #menulink .services a,
+#cconsultants #menulink .consultants a,
+#ccontact #menulink .contact a{
+	background-image:url(../images/tblue.jpg);
+	background-repeat:no-repeat;
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	vertical-align:middle;
+	height:27px;
+	width:99px;
+    padding: 0;
+	color: blue;
+}
+.optionlink {
+  margin-left: 0;
+  margin-top: -5px;
+  width: 580px;
+  padding: 0;
+  float: left;
+  list-style: none;
+}
+.optionlink li {
+	float: left;
+	height:12px;
+	width:80px;
+	color: black;
+	padding: 0;
+}
+.optionlink a {
+  font-size:11px;
+  font-weight:bold;
+  text-decoration:none;
+  text-align:center;
+  vertical-align:middle;
+  padding: 0;
+  line-height: 2.1em;
+  color: black;
+  display: block;
+}
+.optionlink a:visited {
+  color: green;
+}
+.optionlink a:hover {
+  color: red;
+}
+.optionlink a:active{
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	vertical-align:middle;
+	width:80px;
+    padding: 0;
+}
+#home .home a,
+#about .about a,
+#history .history a,
+#mission .mission a,
+#vision .vision a,
+#values .values a,
+#services .services a,
+#projects .projects a,
+#staffing .staffing a,
+#offshore .offshore a,
+#clients .clients a,
+#testimonials .testimonials a,
+#servicefaq .servicefaq a,
+#consultants .consultants a,
+#benefits .benefits a,
+#openings .openings a,
+#postaresume .postaresume a,
+#consultantfaq .consultantfaq a,
+#contact .contact a{
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	vertical-align:middle;
+	width:80px;
+    padding: 0;
+    color: blue;
+}
+dt {
+	font-weight: bold;
+	padding-top: 1.5em;
+}
+.testimonial_box{
+	text-align:justify !important;
+	border:1px dashed #0070B3;
+	background-color:#D7F0FF;
+	padding:5px;
+	margin:0px 4px 0px 4px;
+	font-style:italic;
+}
