@@ -10,19 +10,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 2) do
+ActiveRecord::Schema.define(:version => 0) do
 
-  create_table "menus", :force => true do |t|
-    t.integer "position"
-    t.string  "title"
-  end
-
-  create_table "options", :force => true do |t|
-    t.integer "oposition"
-    t.integer "menu_id"
-    t.string  "name"
-    t.string  "optionfile"
-    t.string  "optionimg"
+  create_table "schema_info", :id => false, :force => true do |t|
+    t.integer "version"
   end
 
 end

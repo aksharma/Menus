@@ -3,7 +3,13 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   def set_variables(position=1)
-    @all_menus = Menu.all(:order=>"position")
-    @all_options = Option.all(:conditions => "menu_id=#{position}", :order=>"menu_id, oposition")
+    @all_menus = %w[Home About Services Portfolio Contact]
+    @all_options = [
+                     %w[Home],
+                     %w[About History],
+                     %w[Services FAQ],
+                     %w[Portfolio Clients Testimonials],
+                     %w[Contact]
+                   ][position-1]
   end
 end
