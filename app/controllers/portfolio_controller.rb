@@ -4,14 +4,11 @@ class PortfolioController < ApplicationController
   end
 
   def portfolio
-    set_variables(4)
   end
 
   def clients
-    set_variables(4)
   end
 
   def testimonials
-    set_variables(4)
   end
 end

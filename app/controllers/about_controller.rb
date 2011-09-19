@@ -4,10 +4,8 @@ class AboutController < ApplicationController
   end
 
   def about
-    set_variables(2)
   end
 
   def history
-    set_variables(2)
   end
 end

@@ -4,6 +4,5 @@ class ContactController < ApplicationController
   end
 
   def contact
-    set_variables(5)
   end
 end

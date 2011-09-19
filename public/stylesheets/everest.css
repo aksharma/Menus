@@ -149,11 +149,7 @@ height:27px;
 width:99px;
 padding: 0;
 }
-#chome #menulink .home a,
-#cabout #menulink .about a,
-#cservices #menulink .services a,
-#cportfolio #menulink .portfolio a,
-#ccontact #menulink .contact a{
+.current a{
 background-image:url(../images/tblue.jpg);
 background-repeat:no-repeat;
 font-size:11px;
@@ -208,15 +204,7 @@ vertical-align:middle;
 width:80px;
 padding: 0;
 }
-#home .home a,
-#about .about a,
-#history .history a,
-#services .services a,
-#faq .faq a,
-#portfolio .portfolio a,
-#clients .clients a,
-#testimonials .testimonials a,
-#contact .contact a{
+.optionlink #current-option a{
 font-size:11px;
 font-weight:bold;
 text-decoration:none;

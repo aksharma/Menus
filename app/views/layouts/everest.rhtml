@@ -8,16 +8,31 @@
   <%= stylesheet_link_tag 'everest' %>
 </head>
 <body id=c<%= params[:controller] %>>
+<%
+  menus = %w[Home About Services Portfolio Contact]
+  options = {
+                   :home =>        %w[Home],
+                   :about =>       %w[About History],
+                   :services =>    %w[Services FAQ],
+                   :portfolio =>   %w[Portfolio Clients Testimonials],
+                   :contact =>     %w[Contact]
+                 }[params[:controller].to_sym]
+%>
   <div id=wrapper>
     <div id=header>
       <ul id=menulink>
-        <% @all_menus.each do |menu| %>
-          <li class = <%= menu.downcase %>><%= link_to menu, :controller => menu.downcase %></li>
+        <% menus.each do |menu| %>
+          <li <%= "class=current" if params[:controller] == menu.downcase %>>
+            <%= link_to menu, :controller => menu.downcase %>
+          </li>
         <% end %>
       </ul><!-- menulink -->
-      <ul class=optionlink id=<%= params[:action] %>>
-        <% @all_options.each do |option| %>
-          <li class = <%= option.downcase %>><%= link_to option, :action => option.downcase %></li>
+
+      <ul class=optionlink>
+        <% options.each do |option| %>
+          <li <%= "id=current-option" if params[:action] == option.downcase %>>
+            <%= link_to option, :action => option.downcase %>
+          </li>
         <% end %>
       </ul><!-- optionlink -->
     </div><!-- header -->

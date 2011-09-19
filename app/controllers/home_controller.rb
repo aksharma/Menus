@@ -4,6 +4,5 @@ class HomeController < ApplicationController
   end
 
   def home
-    set_variables(1)
   end
 end
