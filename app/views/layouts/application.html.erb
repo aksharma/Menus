@@ -7,7 +7,7 @@
   <title>Everest Solutions</title>
   <%= stylesheet_link_tag 'everest' %>
 </head>
-<body id=c<%= params[:controller] %>>
+<body>
 <%
   menus = %w[Home About Services Portfolio Contact]
   options = {
@@ -26,7 +26,7 @@
             <%= link_to menu, :controller => menu.downcase, :action => menu.downcase %>
           </li>
         <% end %>
-      </ul><!-- menulink -->
+      </ul>
 
       <ul class=optionlink>
         <% options.each do |option| %>
@@ -34,29 +34,31 @@
             <%= link_to option, :action => option.downcase %>
           </li>
         <% end %>
-      </ul><!-- optionlink -->
-    </div><!-- header -->
+      </ul>
+    </div>
+
     <div id=main>
       <div id=contentbox>
         <div id=content>
 
           <%= yield  %>
 
-        </div> <!-- content -->
-      </div> <!-- contentbox -->
+        </div>
+      </div>
       <div id=sideimg>
         <img src="../images/<%= params[:action] %>.jpg">
-      </div> <!-- sideimg -->
+      </div>
       <div id=clearone>&nbsp;</div>
-    </div><!-- main -->
+    </div>
+
     <div id=footers>
       <div id=contactinfo>
         <p>Phone: (954)456-8187</p>
-      </div> <!-- contactinfo -->
+      </div>
       <div id=footerbar>
         <p>www.everestsolutions.com</p>
-      </div> <!-- footerbar -->
-    </div><!-- footers -->
+      </div>
+    </div>
   </div><!-- wrapper -->
 </body>
 </html>
