@@ -23,7 +23,7 @@
       <ul id=menulink>
         <% menus.each do |menu| %>
           <li <%= "class=current" if params[:controller] == menu.downcase %>>
-            <%= link_to menu, :controller => menu.downcase %>
+            <%= link_to menu, :controller => menu.downcase, :action => menu.downcase %>
           </li>
         <% end %>
       </ul><!-- menulink -->
